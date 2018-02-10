@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -18,6 +20,6 @@ import { AppComponent } from './app.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HomeComponent]
 })
 export class AppModule { }
