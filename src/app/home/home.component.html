@@ -1,3 +1,20 @@
-<p>
-  home works!
-</p>
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{title}}!
+    </h1>
+  </div>
+  <mat-card>
+    <mat-card-title>
+      <span class="mat-headline">Enter your life goal</span>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput [(ngModel)]="answer" placeholder="Who has the best dev tutorials?">
+      </mat-form-field>
+      <br>
+      <button mat-raised-button (click)="showAnswer()" color="primary">Answer me</button>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+  </mat-card>
+</div>
