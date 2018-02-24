@@ -34,6 +34,7 @@ export class Hero {
 
 export class ProductsComponent implements OnInit {
   products:Hero[];
+  typesOfShoes = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 
   constructor(private _productservice: ProductService) { }
   ngOnInit() {
